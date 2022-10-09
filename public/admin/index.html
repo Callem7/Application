@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Admin</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css"> <!-- Conecção de Bootstrap 5-->
+</head>
+<body>
+    <header class = "mb-5"> <!-- Menu -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+              <a class="navbar-brand" href="#">Vamos Viajar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/">Início</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Sobre Nós</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Contacta-nos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/admin">Página Admin</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="tel" placeholder="Número de telefone" aria-label="Phone number">
+                  <button class="btn btn-outline-primary text-nowrap" type="submit">Liga-me</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <div class="container shadow p-3 mb-5 bg-body rounded"> <!--Faz uma sombra-->
+            <h1 class = "text-center">Página Admin</h1>
+            <hr>
+            <div class="d-flex align-items-start">
+                <div class="nav flex-column nav-pills me-3 border rounded w-25 p-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <button class="nav-link active" id="v-pills-artigos-tab" data-bs-toggle="pill" data-bs-target="#v-pills-artigos" type="button" role="tab" aria-controls="v-pills-artigos" aria-selected="true">Artigos</button>
+                  <button class="nav-link" id="v-pills-emails-tab" data-bs-toggle="pill" data-bs-target="#v-pills-emails" type="button" role="tab" aria-controls="v-pills-emails" aria-selected="false">Emails</button>
+                  <button class="nav-link" id="v-pills-pedidos-tab" data-bs-toggle="pill" data-bs-target="#v-pills-pedidos" type="button" role="tab" aria-controls="v-pills-pedidos" aria-selected="false">Pedidos de Chamada</button>
+                </div>
+                <div class="tab-content border rounded w-75 p-3" id="v-pills-tabContent">
+                  <div class="tab-pane fade show active" id="v-pills-artigos" role="tabpanel" aria-labelledby="v-pills-artigos-tab">
+                    <button class="btn btn-primary mb-3">Adicionar mensagens</button> <!-- Botão Adicionar Mensagens -->
+                    <table class="articles-list table table-striped"> <!-- Criação da Tabela -->
+                        <tr>
+                            <td>1</td>
+                            <td>Torre Eiffel</td>
+                            <td>11-Nov-2023</td>
+                            <td>França</td>
+                            <td><button class="btn btn-link p-0 text-decoration-none">Editar</button></td>
+                            <td><button class="btn btn-link p-0 text-decoration-none">X</button></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Big Ben</td>
+                            <td>11-Nov-2023</td>
+                            <td>Reino Unido</td>
+                            <td><button class="btn btn-link p-0 text-decoration-none">Editar</button></td>
+                            <td><button class="btn btn-link p-0 text-decoration-none">X</button></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Estatua da Liberdade</td>
+                            <td>11-Nov-2023</td>
+                            <td>EUA</td>
+                            <td><button class="btn btn-link p-0 text-decoration-none">Editar</button></td>
+                            <td><button class="btn btn-link p-0 text-decoration-none">X</button></td>
+                        </tr>
+                    </table>
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-emails" role="tabpanel" aria-labelledby="v-pills-emails-tab">Conteúdo de emails</div>
+                  <div class="tab-pane fade" id="v-pills-pedidos" role="tabpanel" aria-labelledby="v-pills-pedidos-tab">Conteúdo de pedidos de chamada</div>
+                </div>
+              </div>
+        </div>
+    </main>
+
+    <script src="/js/bootstrap.min.js"></script> <!-- Conecta o Bootstrap -->
+    <script src="/admin/js/main.js"></script> <!-- Conecta index.html a pagina main.js -->
+</body>
+</html>
